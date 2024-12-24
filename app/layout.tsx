@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../assets/styles/globals.css";
+import { APP_NAME } from "@/lib/constatnts";
 
 const geistSans = Inter({
   subsets: ["latin"],
@@ -8,7 +9,7 @@ const geistSans = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Shop DW",
+  title: `${APP_NAME}`,
   description: "Selling wide ranges of products",
 };
 
