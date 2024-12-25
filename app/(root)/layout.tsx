@@ -3,15 +3,12 @@ import { Inter } from "next/font/google";
 import '@/assets/styles/globals.css';
 import { APP_NAME, APP_DESCRIPTION, SERVER_URL } from "@/lib/constatnts";
 import Header from "@/components/shared/header";
+import Footer from "@/components/footer";
 
-const geistSans = Inter({
-    subsets: ["latin"],
-    variable: "--font-geist-sans",
-});
 
 export const metadata: Metadata = {
     title: {
-        template: `%s |ShopDw`,
+        template: `%s |ShopDW`,
         default: APP_NAME,
     },
     description: `${APP_DESCRIPTION}`,
@@ -30,9 +27,8 @@ export default function RootLayout({
                 <main className="flex-1 wrapper">
                     {children}
                 </main>
+                <Footer />
             </div>
         </>
-
-
     );
 }
