@@ -18,9 +18,11 @@ const Header = () => {
                     <Image src='/images/SHOPDDWLogo.png' alt={`${APP_NAME}`} className='rounded-full'
                         width={100} height={100}
                         priority={true} />
-                    <span className='hidden lg:block font-bold text-2xl ml-3'>{APP_NAME}</span>
+                    <span className='hidden md:block font-bold text-2xl ml-3'>{APP_NAME}</span>
                 </Link>
             </div>
+            {/* To Decide Whether to show the cart and user icon in mobile view or Just the APP_NAME */}
+            {/* <span className='xs:block  md:hidden font-bold text-2xl ml-3'>{APP_NAME}</span> */}
             <Menu />
         </div>
     </header>;
