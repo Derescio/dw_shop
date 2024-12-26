@@ -5,11 +5,13 @@ import ProductPrice from "./product-price";
 
 const ProductCard = ({ product }: { product: any }) => {
     return (<Card className="w-full max-w-sm">
+
         <CardHeader className="p-0 items-center">
             <Link href={`/product/${product.slug}`}>
                 <Image src={product.images[0]} alt={product.name} width={300} height={300} priority={true} />
             </Link>
         </CardHeader>
+
         <CardContent className="p-4">
             <div className="text-xs bold mb-2">{product.brand}</div>
             <Link href={`/product/${product.slug}`}>
@@ -19,10 +21,15 @@ const ProductCard = ({ product }: { product: any }) => {
                 <p className="text-gray-500">{product.category}</p>
                 {product.stock > 0 ? <ProductPrice value={Number(product.price)} /> : <p className="text-red-500">Out of Stock</p>}
             </div>
-
-
         </CardContent>
+
     </Card>);
 }
 
 export default ProductCard;
+
+//Component Description:
+//This component is used to display a list of products, it takes a data array as a prop and displays the products in a grid layout.
+// It is used in the ProductList component.
+//This component is a reusable component that displays a product card.
+// It takes a product object as a prop and displays the product image, name, brand, category, price, and stock status.

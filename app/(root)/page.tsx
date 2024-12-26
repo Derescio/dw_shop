@@ -1,5 +1,7 @@
 import sampleData from '../db/sample-data';
 import ProductList from '@/components/shared/product/product-list';
+
+
 export const metadata = {
   title: 'Home'
 };
@@ -15,3 +17,8 @@ const HomePage = async () => {
 }
 
 export default HomePage;
+
+//Component Description:
+//This is the Home Page of the ShopDW Application. It displays a list of products.
+//The data for the products is fetched from a sample data file.
+//The ProductList component is used to display the list of products.

@@ -1,7 +1,3 @@
-import { ShoppingCart, UserIcon } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import ModeToggle from './mode-toglle';
-
 import Link from 'next/link';
 import Image from 'next/image';
 import { APP_NAME } from '@/lib/constatnts';
