@@ -61,3 +61,11 @@ const ModeToggle = () => {
 }
 
 export default ModeToggle;
+
+//Component Description:
+//This is the ModeToggle component. It is used to toggle the theme of the application.
+//It uses the useTheme hook from the next-themes library to get the current theme and set the theme.
+//It uses the DropdownMenu component from the shadcn/ui library to display the theme options.
+//It uses the Button component from the shadcn/ui library to display the theme icon.
+//It uses the MoonIcon, SunIcon, and SunMoon icons from the lucide-react library to display the theme icons.
+//It is used in the Menu component to toggle the theme of the application.

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import ProductPrice from "./product-price";
+import ShareButtons from "../sharebuttons/share-buttons";
 
 const ProductCard = ({ product }: { product: any }) => {
     return (<Card className="w-full max-w-sm">
@@ -22,7 +23,7 @@ const ProductCard = ({ product }: { product: any }) => {
                 {product.stock > 0 ? <ProductPrice value={Number(product.price)} /> : <p className="text-red-500">Out of Stock</p>}
             </div>
         </CardContent>
-
+        <ShareButtons product={product} />
     </Card>);
 }
 
