@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import ProductPrice from "@/components/shared/product/product-price";
-import ShareButtons from "@/components/shared/sharebuttons/share-buttons";
+// import ShareButtons from "@/components/shared/sharebuttons/share-buttons";
 import ProductImages from "@/components/shared/product/product-images";
 
 
@@ -45,9 +45,9 @@ const ProductPage = async (props: { params: Promise<{ slug: string }> }) => {
                     </div>
 
 
-                    <div className="sm:mr-52 gap-y-4">
+                    {/* <div className="sm:mr-52 gap-y-4">
                         <ShareButtons product={product} />
-                    </div>
+                    </div> */}
                 </div>
                 {/* Actions Column */}
                 <div>
