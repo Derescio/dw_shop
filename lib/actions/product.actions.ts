@@ -1,5 +1,5 @@
 'use server';
-import { PrismaClient } from '@prisma/client';
+// import { PrismaClient } from '@prisma/client';
 import { prisma } from '@/app/db/prisma'
 import { prismaToJSObject } from '../utils';
 import { LATEST_PRODUCTS_LIMIT } from '../constatnts';

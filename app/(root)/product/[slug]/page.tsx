@@ -2,7 +2,7 @@ import { getProductBySlug } from "@/lib/actions/product.actions";
 import { notFound } from "next/navigation";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import ProductPrice from "@/components/shared/product/product-price";
 import ShareButtons from "@/components/shared/sharebuttons/share-buttons";
 import ProductImages from "@/components/shared/product/product-images";

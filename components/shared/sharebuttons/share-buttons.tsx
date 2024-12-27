@@ -15,7 +15,7 @@ import { Product } from '@/types';
 
 
 
-const ShareButtons = ({ product, className }: { product: Product, className?: string }) => {
+const ShareButtons = ({ product }: { product: Product }) => {
 
     const shareUrl = `${process.env.NEXT_PUBLIC_DOMAIN}/product/${product.slug}`;
 
